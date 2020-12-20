@@ -22,8 +22,8 @@ def generateRecords(lengthOfName, listOfDomains, totalRecords, listOfQuotes):
         for num in range(totalRecords):
             key = generateName(lengthOfName)+'@'+getDomain(listOfDomains)
             value = getQuotes(quotes)
-            toWrite.write(key + ': ' + value + '\n')
-        toWrite.write("brian@gmail.com: Don't let me leave Murph\n")
-        toWrite.write("example@example.com: All I do is win")
+            toWrite.write(key + ':' + value + '\n')
+        toWrite.write("brian@gmail.com:Don't let me leave Murph\n")
+        toWrite.write("example@example.com:All I do is win")
 
 generateRecords(10, listOfDomains, 100000, quotes)

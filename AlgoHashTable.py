@@ -44,3 +44,11 @@ class AlgoHashTable:
         return "".join(str(item) for item in self.hashMap)
 
 hashTable = AlgoHashTable(256)
+
+with open('data.txt') as f:
+    for line in f:
+        key, value = line.split(':')
+        hashTable.setVal(key, value)
+
+print(hashTable.getVal('brian@gmail.com'))
+print(hashTable.getVal('example@example.com'))
